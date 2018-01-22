@@ -1,7 +1,7 @@
 function calcular(){
     //aqui crida a totes ses funcions
    var quota = Math.round(capital()*interes()/(100*(1-Math.pow(1+interes()/100,-plazos())))*100)/100;
-   document.getElementById("response").innerHTML= "La quantitat mensual a abonar surt a: "+quota;
+   document.getElementById("response").innerHTML= "La quantitat mensual a abonar surt a: "+quota+"i l'hipoteca s'acabarà de pagar dia";
    return false;
 }
 

@@ -1,0 +1,23 @@
+.form{/*estils agafats del bootstrap amb etiqueta input-group-addon. a més, afegits nous estils*/
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+    position: inherit;
+    height: 60%;
+  }
+  .fondo{
+      background-color: currentColor;
+  }
+  #response{
+    text-align: center;
+    color: coral;
+    font-weight: bold;
+  }

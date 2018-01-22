@@ -4,10 +4,11 @@
         <title>Calcular la quota mensual d'una hipoteca</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="estils.css">
         <script src="quota.js"></script>
     </head>
-    <body>
-        <div class=".form-control:focus">
+    <body class="fondo">
+        <div class="form">
                 <form method="get" onsubmit=" return calcular()">
                     <div>
                         <h3>Vols calcular la quota mensual a pagar de la teva hipoteca?</h3>
@@ -18,18 +19,18 @@
                     </div>
                     <div>
                         <label for="capital">Introduir Capital demanat</label>
-                        <input type="number" id="capital" placeholder="No pot ser major a 1 milió" required min="1000" max="1000000">
+                        <input type="number" id="capital" placeholder="< a 1 milió" required min="1000" max="1000000">
                     </div>
                     <div>
                         <label for="interès">Introduir Tipus d'Interès establert</label>
-                        <input type="number" id="interes" min="0" step=".01" placeholder="per exemple:2" required>
+                        <input type="number" id="interes" min="0" step=".01" placeholder="per exemple 2" required>
                     </div>
                     <div>
                         <label for="plaços">Introduir plaços de pagament</label>
-                        <input type="number" id="plaços" min="1" max="40" placeholder="Nombre d'anys" required>
+                        <input type="number" id="plaços" min="1" max="40" placeholder="nº anys" required>
                     </div>
                     <div>
-                        <input type="submit" value="Calular">
+                        <input type="submit" value="Calcular">
                     </div>
                 </form>    
         </div>
