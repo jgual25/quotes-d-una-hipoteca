@@ -1,7 +1,7 @@
 function calcular(){
     //aqui crida a totes ses funcions
    var quota = Math.round(capital()*interes()/(100*(1-Math.pow(1+interes()/100,-plazos())))*100)/100;
-   document.getElementById("response").innerHTML= "La quantitat mensual a abonar surt a: "+quota+"i l'hipoteca s'acabarà de pagar dia";
+   document.getElementById("response").innerHTML= "La quantitat mensual a abonar surt a: "+quota+" i l'hipoteca s'acabarà de pagar dia";
    return false;
 }
 
@@ -17,6 +17,21 @@ function diavalid(){
         alert ("El dia inicial ha de començar a dia primer de mes.");
        }
 }
+
+/*function calcularDiasAusencia(fechaIni, fechaFin) {
+    var diaEnMils = 1000 * 60 * 60 * 24,
+        desde = new Date(fechaIni.substr(0, 10)),
+        hasta = new Date(fechaFin.substr(0, 10)),
+        diff = hasta.getTime() - desde.getTime() + diaEnMils;// +1 incluir el dia de ini
+    return diff / diaEnMils;
+  }
+  
+  document.getElementById('calcular').addEventListener('click', function() {
+    document.getElementById('dias').innerText = calcularDiasAusencia(
+      document.getElementById('fechaIni').value,
+      document.getElementById('fechaFin').value
+    );
+});*/
 
 function capital(num){
     var num= document.getElementById("capital").value;
