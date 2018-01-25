@@ -20,4 +20,7 @@
     text-align: center;
     color: coral;
     font-weight: bold;
-  }
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: double;
+}
