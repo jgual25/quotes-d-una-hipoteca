@@ -3,6 +3,7 @@ function calcular(){
    var quota = Math.round(capital()*interes()/(100*(1-Math.pow(1+interes()/100,-plazos())))*100)/100;
    document.getElementById("response").innerHTML= "La quantitat mensual a abonar surt a: "+quota+" i l'hipoteca s'acabarà de pagar dia "+diavalid();
    return false;
+   document.body.innerHTML = "";
 }
 
 
@@ -13,7 +14,7 @@ function diavalid(){
         window.location.href = "index.html";
 
     }else{
-    day.setMonth((day.getMonth()+1)+plazos());
+    day.setMonth(day.getMonth()+1+plazos());
     return day.getDate()+"/"+day.getMonth()+"/"+day.getFullYear();
     }
 }
