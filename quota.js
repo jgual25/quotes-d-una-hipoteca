@@ -15,7 +15,8 @@ function diavalid(){
 
     }else{
     day.setMonth(day.getMonth()+1+plazos());
-    return day.getDate()+"/"+day.getMonth()+"/"+day.getFullYear();
+    diafi = day.getDate()+"/"+day.getMonth()+"/"+day.getFullYear();
+    return diafi;
     }
 }
 

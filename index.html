@@ -2,19 +2,19 @@
 <html>
     <head>
         <title>Calcular la quota mensual d'una hipoteca</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- enllaços a bootstrap, css i js-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="bootstrap.css">
         <link rel="stylesheet" href="estils.css">
         <script src="quota.js"></script>
     </head>
     <body class="fondo">
-        <div class="form">
+        <div class="form"><!-- formulari que inclou les etiquetes amb els inputs corresponents per a poder calcular la quota mensual-->
                 <form method="get" action="3xx Redirection" onsubmit=" return calcular()">
                     <div>
                         <h3>Vols calcular la quota mensual a pagar de la teva hipoteca?</h3>
                     </div>
-                    <div>
+                    <div><!-- a cada input se l'ha establert com a requerit per a que no es pugui deixar en blanc-->
                         <div>
                         <label for="dia"class="etiqueta">Introduir Dia d'inici de pagament</label>
                         </div>
@@ -29,15 +29,15 @@
                         </div>
                         <div class="input">
                         <i class="fa fa-money fa-3x" aria-hidden="true"></i>
-                        <input type="number" id="capital" placeholder="< a 1 milió" required min="1000" max="1000000">
-                        </div>
+                        <input type="number" id="capital" placeholder="  < a 1 milió" required min="1000" max="1000000">
+                        </div><!-- a l'hora d'introduir el capital se l'hi ha aplicat un mínim de 1000 i un màxim d'un milió-->
                     </div>
                     <div>
                         <div>
                         <label for="interès"class="etiqueta">Introduir Tipus d'Interès establert</label>
                         </div>
-                        <div class="input">
-                        <input type="number" id="interes" min="0.1" max="99.9" step=".01" placeholder="p.ex: 1.15" required>
+                        <div class="input"><!--el tipus d'interès com a mínim serà de 0.1 i com a màxim 99.9. A més l'step permet insertar fins a dos decimals-->
+                        <input type="number" id="interes" min="0.1" max="99.9" step=".01" placeholder=" p.ex: 1.15" required>
                         <i class="fa fa-percent fa-2x" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -47,12 +47,12 @@
                         </div>
                         <div class="input">
                         <i class="fa fa-hourglass-start fa-3x" aria-hidden="true"></i>
-                        <input type="number" id="plaços" min="1" max="40" placeholder="Nº anys" required>
-                        </div>
+                        <input type="number" id="plaços" min="1" max="40" placeholder="  Anys" required>
+                        </div><!--els plaços seran com a mínim d'1 fins a 40 anys -->
                     </div>
                     <div>
                         <input type="submit" class="etiqueta" value="Calcular">
-                    </div>
+                    </div><!--botó que dispararà la funció principal-->
                 </form>    
         </div></br>
         <div id="response"></div>
